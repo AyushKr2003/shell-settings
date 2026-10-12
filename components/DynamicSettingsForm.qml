@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls as QQC
 import qs.Commons
+import qs.Commons as Commons
 import qs.Ui as Ui
 
 Column {
@@ -10,8 +11,8 @@ Column {
 
   property var schema: []
   property var entry: ({})
-  property color foreground: Color.popups.text
-  property color accent: Color.accent
+  property color foreground: Commons.Color.popups.text
+  property color accent: Commons.Color.accent
   property string fontFamily: Style.font.family
   // Resolved on disk path of the plugin that owns this form, used to
   // resolve relative argv entries in a multiselect's `optionsCommand`.

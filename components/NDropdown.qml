@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import qs.Commons
+import qs.Commons as Commons
 
 // Themed ComboBox + popup. Anchors below the trigger, paints with the host
 // shell's foreground/background palette, and inherits the shell-wide corner
@@ -11,9 +12,9 @@ Item {
   property string label: ""
   property string value: ""
   property var options: []
-  property color foreground: Color.popups.text
-  property color background: Color.popups.background
-  property color accent: Color.accent
+  property color foreground: Commons.Color.popups.text
+  property color background: Commons.Color.popups.background
+  property color accent: Commons.Color.accent
   property string fontFamily: Style.font.family
   property int cornerRadius: 0
   property int rowHeight: Style.spacing.controlHeight

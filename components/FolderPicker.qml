@@ -4,17 +4,18 @@ import QtQuick.Layouts
 import Quickshell
 import Quickshell.Io
 import qs.Commons
+import qs.Commons as Commons
 import qs.Ui
 
 Rectangle {
     id: root
 
-    property color foreground: Color.popups.text
-    property color accent: Color.accent
+    property color foreground: Commons.Color.popups.text
+    property color accent: Commons.Color.accent
     property string fontFamily: "monospace"
     property int cornerRadius: Style.cornerRadius
-    property color background: Color.popups.background
-    property color urgent: Color.urgent
+    property color background: Commons.Color.popups.background
+    property color urgent: Commons.Color.urgent
     property string homePath: Quickshell.env("HOME") || ""
 
     signal selected(string path)

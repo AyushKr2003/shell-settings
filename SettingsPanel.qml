@@ -4,6 +4,7 @@ import QtQuick.Layouts
 import Quickshell
 import Quickshell.Io
 import qs.Commons
+import qs.Commons as Commons
 import qs.Ui
 
 import "./components" as Cmp
@@ -41,10 +42,10 @@ Item {
   // ---------------- theme --------------------------------------------------
   // Settings deliberately isn't a themable surface in shell.toml — it
   // tracks the foundational palette so every theme renders consistently.
-  property color foreground: Color.popups.text
-  property color background: Color.popups.background
-  property color accent: Color.accent
-  property color urgent: Color.urgent
+  property color foreground: Commons.Color.popups.text
+  property color background: Commons.Color.popups.background
+  property color accent: Commons.Color.accent
+  property color urgent: Commons.Color.urgent
   property string fontFamily: "monospace"
 
   // Structural style tokens live on the shared Style singleton so theme swaps

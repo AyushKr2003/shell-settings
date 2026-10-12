@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import qs.Commons
+import qs.Commons as Commons
 import qs.Ui
 
 Rectangle {
@@ -14,9 +15,9 @@ Rectangle {
     border.color: Style.normalBorderFor(root.foreground, root.accent)
     border.width: Style.normalBorderWidth
 
-    property color foreground: Color.foreground
-    property color accent: Color.accent
-    property color urgent: Color.urgent
+    property color foreground: Commons.Color.foreground
+    property color accent: Commons.Color.accent
+    property color urgent: Commons.Color.urgent
     property string fontFamily: Style.font.family
     property int cornerRadius: Style.cornerRadius
 
